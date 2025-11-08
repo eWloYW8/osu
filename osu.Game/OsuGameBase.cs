@@ -267,14 +267,15 @@ namespace osu.Game
                 // using (var str = File.OpenRead(typeof(OsuGameBase).Assembly.Location))
                 //     VersionHash = str.ComputeMD5Hash();
 
-                // hash for 2025.1029.1-lazer iOS release build
-                VersionHash = "7309a29b19e497cdc96fa4f771e752a0";
+                // hash for 2025.1029.1-lazer Windows release build
+                // osu.Game.dll MD5: d9d53645bb41a186b62db28b6d4a37c4
+                VersionHash = "d9d53645bb41a186b62db28b6d4a37c4";
             }
             catch
             {
                 // special case for android builds, which can't read DLLs from a packed apk.
                 // should eventually be handled in a better way.
-                VersionHash = $"{Version}-{RuntimeInfo.OS}".ComputeMD5Hash();
+                VersionHash = "d9d53645bb41a186b62db28b6d4a37c4";
             }
 
             Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));

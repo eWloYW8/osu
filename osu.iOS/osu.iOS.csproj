@@ -3,7 +3,7 @@
     <TargetFramework>net8.0-ios</TargetFramework>
     <SupportedOSPlatformVersion>13.4</SupportedOSPlatformVersion>
     <OutputType>Exe</OutputType>
-    <Version>0.1.0</Version>
+    <Version>2025.1029.1-lazer</Version>
 
     <!-- Incoming version string will be e.g. 2025.723.0-tachyon -->
     <VersionNoSuffix>$([System.String]::Copy('$(Version)').Split('-')[0])</VersionNoSuffix>

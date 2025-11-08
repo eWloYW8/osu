@@ -14,8 +14,6 @@
 	<true/>
 	<key>MinimumOSVersion</key>
 	<string>13.4</string>
-	<key>OsuVersion</key>
-	<string>2025.1029.1-lazer</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>

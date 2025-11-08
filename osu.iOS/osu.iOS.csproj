@@ -27,9 +27,10 @@
     <PropertyGroup>
       <PlistFilePath>$(AppBundleDir)/Info.plist</PlistFilePath>
       <OsuVersionKey>OsuVersion</OsuVersionKey>
+      <FixedOsuVersion>2025.1029.1-lazer</FixedOsuVersion>
     </PropertyGroup>
     <Exec Command="bash -c &quot;(/usr/libexec/PlistBuddy -c 'Print :$(OsuVersionKey)' '$(PlistFilePath)' &gt;/dev/null 2&gt;&amp;1 \
-                                 &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :$(OsuVersionKey) $(Version)' '$(PlistFilePath)') \
-                                 || /usr/libexec/PlistBuddy -c 'Add :$(OsuVersionKey) string $(Version)' '$(PlistFilePath)'&quot;"/>
+                                 &amp;&amp; /usr/libexec/PlistBuddy -c 'Set :$(OsuVersionKey) $(FixedOsuVersion)' '$(PlistFilePath)') \
+                                 || /usr/libexec/PlistBuddy -c 'Add :$(OsuVersionKey) string $(FixedOsuVersion)' '$(PlistFilePath)'&quot;"/>
   </Target>
 </Project>

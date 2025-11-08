@@ -7,9 +7,9 @@
 	<key>CFBundleName</key>
 	<string>osu!</string>
 	<key>CFBundleDisplayName</key>
+	<string>osu!</string>
 	<key>CFBundleVersion</key>
 	<string>2025.1029.1</string>
-	<string>osu!</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>

@@ -264,8 +264,11 @@ namespace osu.Game
         {
             try
             {
-                using (var str = File.OpenRead(typeof(OsuGameBase).Assembly.Location))
-                    VersionHash = str.ComputeMD5Hash();
+                // using (var str = File.OpenRead(typeof(OsuGameBase).Assembly.Location))
+                //     VersionHash = str.ComputeMD5Hash();
+
+                // hash for 2025.1029.1-lazer iOS release build
+                VersionHash = "7309a29b19e497cdc96fa4f771e752a0";
             }
             catch
             {

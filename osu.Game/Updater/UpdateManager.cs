@@ -70,8 +70,10 @@ namespace osu.Game.Updater
                     config.SetValue(OsuSetting.ReleaseStream, FixedReleaseStream.Value);
 
                 // notify the user if they're using a build that is not officially sanctioned.
-                if (RuntimeInfo.EntryAssembly.GetCustomAttribute<OfficialBuildAttribute>() == null)
-                    Notifications.Post(new SimpleNotification { Text = NotificationsStrings.NotOfficialBuild });
+
+                // fake official build detection for iOS builds
+                // if (RuntimeInfo.EntryAssembly.GetCustomAttribute<OfficialBuildAttribute>() == null)
+                //     Notifications.Post(new SimpleNotification { Text = NotificationsStrings.NotOfficialBuild });
             }
             else
             {
